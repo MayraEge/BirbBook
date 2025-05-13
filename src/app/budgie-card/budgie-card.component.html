@@ -1,0 +1,7 @@
+<div class="standard-card card">
+  <img src= "{{ image }}">
+  <p>{{ text }}</p>
+  <button (click)="like()">LIKE</button>
+  <span>{{ messageService.getMessages()[index]?.likes || 0 }}Likes</span>
+  <button (click)="writeMessage()">Nachricht schreiben</button>
+</div>

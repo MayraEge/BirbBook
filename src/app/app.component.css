@@ -1,0 +1,10 @@
+.container {
+  margin-right: 84px;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: center;
+  padding-left:200px;
+  padding-right:200px;
+}

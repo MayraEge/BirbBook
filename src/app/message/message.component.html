@@ -1,0 +1,10 @@
+<div>
+  <input [(ngModel)]="newMessage" placeholder="Schreibe eine Nachricht">
+  <button (click)="addMessage()">Senden</button>
+</div>
+
+<div *ngFor="let message of messages; let i = index">
+  <p> {{ message.text }}
+    <button (click)="likeMessage(i)">Like</button>
+    Likes: {{ message.likes }}</p>
+</div>
